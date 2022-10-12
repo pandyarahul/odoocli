@@ -1,5 +1,5 @@
 
-# Odoo CLI
+# 🛠 Odoo CLI
 
 Daily useful commands for Odoo Developer and GitHub cheat sheet.
 
@@ -21,14 +21,17 @@ git status
 Add Commit
 ```bash
 git add *
+```
+```bash
 git add --all
 ```
 Commit 
 ```bash
 git commit -m "Issue Fiexed"
+```
+```bash
 git commit -am "[ADD] Issue Fixed"
 ```
-
 Push Commit 
 ```bash
 git push
@@ -62,13 +65,17 @@ git log -S “free text”
 Global username & email 
 ```bash
 git config --global user.name "Pandya Rahul"
-git config --global user.email 'hello.rahul@aol.com'
+```
+```bash
+git config --global user.email "hello.rahul@aol.com"
 ```
 
 Local username & email 
 ```bash
-git config user.name "Jakub Pawlowicz"
-git config user.email '<email>'
+git config user.name "Pandya Rahul"
+```
+```bash
+git config user.email "hello.rahul@aol.com"
 ```
 
 Clone Specific Branch 
@@ -99,12 +106,27 @@ ssh-keygen -t rsa
 #### Check & Kill Service 
 ```bash
 ps -ax  |  grep  "odoo"
+```
+```bash
 kill -9  service_no
 ```
-# Odoo CLI
+# 🚀 Odoo CLI
 #### Run Odoo using Config File
 ```bash
 python3.7 /home/rahul/workspace/odoo_15/odoo/odoo-bin -c /home/rahul/Downloads/odoo_v15.conf
+```
+#### Config File
+```bash
+[options]
+addons_path = /home/rahul/workspace/odoo_15/odoo,/home/rahul/workspace/odoo_15/odoo/odoo,/home/rahul/workspace/odoo_15/custom_addons_15
+admin_passwd = admin_123
+db_host = localhost
+db_password = odoo
+db_port = 8015
+db_user = odoo
+http_port = 8015
+;dbfilter = 
+limit_time_real = 1200000
 ```
 
 #### Odoo 8.0 
@@ -185,25 +207,28 @@ python3.8 odoo-bin --addons-path=addons,../custom_addons_16 --xmlrpc-port=8016 -
 python3.8 odoo-bin --addons-path=addons,../custom_addons_16e --xmlrpc-port=8026 --db-filter=v16e
 ```
 
-### Python Useful Commands
-
-Clone Odoo 
+### Python Useful Commands 
 ```bash
 sudo python3.8 -m pip install pyopenssl
+```
+```bash
 python3.8 -m pip install PyPDF2==1.26.0
+```
+```bash
 python3.8 -m pip install -r /home/odoo/requirements.txt
+```
+```bash
 sudo python3.8 -m pip install -r requirements.txt
 ```
 
 ### Extend Enterprise Expiry
 
-Clone Odoo 
 ```bash
 web_enterprise > home_menu.js > _enterpriseExpirationCheck()  >         
 var dbexpirationDate = new moment(new moment().add(100000, 'd'));
 ```
 ```bash
-Technical > System Parameters ;
+Setting > Technical > System Parameters ;
 Type in "database.expiration_date"
 ```
 
@@ -246,6 +271,8 @@ delete from account_move where id=11;
 Update Query 
 ```bash
 UPDATE invoice_sale_commission SET readonly = False WHERE ID = 1;
+```
+```bash
 UPDATE rma_main SET state = 'draft' WHERE ID = 8;
 ```
 Exit 
@@ -261,13 +288,14 @@ sudo service postgresql restart
 ## Support
 
 For support, email hello.rahul@aol.com 😊
+
 ## Authors
 
 - [@pandyarahul](https://github.com/pandyarahul)
 
 
 ## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://pandyarahul.odoo.com//)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://pandyarahul.odoo.com/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pandyarahul/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/pandyarahul4u/)
 
