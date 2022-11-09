@@ -8,9 +8,8 @@ Daily useful commands for Odoo Developer and GitHub cheat sheet.
 
 Clone Odoo
 ```bash
-https://github.com/odoo/odoo.git
+git clone https://github.com/odoo/odoo.git
 ```
-Clone Odoo Single Branch
 ```bash
 git clone https://www.github.com/odoo/odoo --depth 1 --branch 12.0 --single-branch
 ```
@@ -97,8 +96,7 @@ Remove Changes from Repo
 ```bash
 git clean -df
 ```
-#### Generate SHH Key
-Clone Odoo 
+#### Generate SHH Key 
 ```bash
 ssh-keygen -t rsa
 ```
@@ -113,7 +111,7 @@ kill -9  service_no
 # 🚀 Odoo CLI
 #### Run Odoo using Config File
 ```bash
-python3.7 /home/rahul/workspace/odoo_15/odoo/odoo-bin -c /home/rahul/Downloads/odoo_v15.conf
+python3.8 /home/rahul/workspace/odoo_15/odoo/odoo-bin -c /home/rahul/Downloads/odoo_v15.conf
 ```
 #### Config File
 ```bash
@@ -131,7 +129,7 @@ limit_time_real = 1200000
 
 #### Odoo 8.0 
 ```bash
-./openerp-server --addons-path=addons,../custom_addons_8 --xmlrpc-port=8008 --db-filter=v8
+python2.7 ./openerp-server --addons-path=addons,../custom_addons_8 --xmlrpc-port=8008 --db-filter=v8
 ```
 
 #### Odoo 9.0
@@ -274,6 +272,9 @@ UPDATE invoice_sale_commission SET readonly = False WHERE ID = 1;
 ```
 ```bash
 UPDATE rma_main SET state = 'draft' WHERE ID = 8;
+```
+```bash
+UPDATE res_users SET login = 'admin' WHERE ID = 2;
 ```
 Exit 
 ```bash
