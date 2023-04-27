@@ -286,6 +286,23 @@ Restart PostgreSQL Service
 sudo service postgresql restart
 ```
 
+#### Restore Database from SQL 
+```bash
+sudo su postgres
+```
+```bash
+psql
+```
+```bash
+createdb -U postgres databse_name
+```
+```bash
+psql -U postgres -d databse_name -f /home/rahul/[path]/dump.sql
+```
+```bash
+ALTER DATABASE databse_name OWNER TO ubantu_user;
+```
+
 ## Support
 
 For support, email hello.rahul@aol.com 😊
