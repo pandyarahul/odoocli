@@ -229,6 +229,11 @@ var dbexpirationDate = new moment(new moment().add(100000, 'd'));
 Setting > Technical > System Parameters ;
 Type in "database.expiration_date"
 ```
+```bash
+psql db_name;
+select id,key from ir_config_parameter;
+UPDATE ir_config_parameter SET value='2091-04-05 11:13:05' WHERE ID =23;
+```
 
 ## PostgreSQL Commands
 
