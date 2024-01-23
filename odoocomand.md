@@ -218,6 +218,38 @@ python3.8 -m pip install -r /home/odoo/requirements.txt
 ```bash
 sudo python3.8 -m pip install -r requirements.txt
 ```
+Install Python for Specific Version 
+```bash
+sudo apt-get upgrade
+```
+```bash
+sudo add-apt-repository ppa:deadsnakes/ppa
+```
+```bash
+sudo apt-get update
+```
+```bash
+sudo apt-get install python3.5
+```
+
+Install Python with Specific Packages 
+```bash
+sudo apt install python3.8-dev
+```
+```bash
+sudo apt install python3.8-venv
+```
+```bash
+sudo apt install python3.8-distutils
+```
+```bash
+sudo apt install python3.8-tk
+```
+
+Remove Python 
+```bash
+sudo apt-get remove python3*
+```
 
 ### Extend Enterprise Expiry
 
