@@ -100,6 +100,9 @@ git clean -df
 ```bash
 ssh-keygen -t rsa
 ```
+```bash
+cat ~/.ssh/id_rsa.pub
+```
 
 #### Check & Kill Service 
 ```bash
